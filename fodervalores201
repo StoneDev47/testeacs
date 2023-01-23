@@ -1,0 +1,18 @@
+local Evt_R = game:service('ReplicatedStorage')["ACS_Engine"].Events:FindFirstChild("Refil")
+
+local Quant = 9999999 -- quantidade de foder tudo quem tem 'IntValue'/'NumberValue' no game
+
+for i,v in pairs(game:GetDescendants()) do
+
+    if v:IsA("IntValue") or v:IsA("NumberValue") then
+
+        Evt_R:FireServer(v,-(Quant-v.Value))
+
+    end
+
+end
+
+ end
+
+end
+
