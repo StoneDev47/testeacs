@@ -1,0 +1,12 @@
+enquanto task.wait() faça
+
+ 
+
+  for _, player in next, game.Players:GetPlayers() do
+
+      game:GetService('ReplicatedStorage')['ACS_Engine'].Events.Whizz:FireServer(player)
+
+  fim
+
+fim
+
